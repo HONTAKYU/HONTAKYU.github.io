@@ -1,37 +1,369 @@
-{% extends '_layout.swig' %}
-{% import '_macro/post.swig' as post_template %}
-{% import '_macro/sidebar.swig' as sidebar_template %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
 
 
-{% block title %}{{ page.title }} | {{ config.title }}{% endblock %}
 
-{% block page_class %}page-post-detail{% endblock %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha256-Z1K5uhUaJXA7Ll0XrZ/0JhX4lAtZFpT6jkKrEDT0drU=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"hontakyu.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.14.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="Welcome! This is my very first post.  The website is not going to be publicly spread, at least for now. So if you visit here without notified by me, lucky for you!">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hello World">
+<meta property="og:url" content="https://hontakyu.github.io/2016/12/22/hello-world/index.html">
+<meta property="og:site_name" content="Who am I">
+<meta property="og:description" content="Welcome! This is my very first post.  The website is not going to be publicly spread, at least for now. So if you visit here without notified by me, lucky for you!">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2016-12-23T06:46:22.000Z">
+<meta property="article:modified_time" content="2017-12-25T06:52:26.289Z">
+<meta property="article:author" content="Teyumn">
+<meta name="twitter:card" content="summary">
+<meta property="fb:admins" content="hdyhandeyu">
+<meta property="fb:app_id" content="1496669363762864">
 
 
-{% block content %}
+<link rel="canonical" href="https://hontakyu.github.io/2016/12/22/hello-world/">
 
-  <div id="posts" class="posts-expand">
-    {{ post_template.render(page) }}
 
-    <div class="post-spread">
-      {% if theme.jiathis %}
-        {% include '_partials/share/jiathis.swig' %}
-      {% elseif theme.baidushare %}
-        {% include '_partials/share/baidushare.swig' %}
-      {% elseif theme.add_this_id %}
-        {% include '_partials/share/add-this.swig' %}
-      {% elseif theme.duoshuo_shortname and theme.duoshuo_share %}
-        {% include '_partials/share/duoshuo_share.swig' %}
-      {% endif %}
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://hontakyu.github.io/2016/12/22/hello-world/","path":"2016/12/22/hello-world/","title":"Hello World"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Hello World | Who am I</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-89396944-1"></script>
+  <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"UA-89396944-1","only_pageview":false}</script>
+  <script src="/js/third-party/analytics/google-analytics.js"></script>
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
     </div>
   </div>
 
-{% endblock %}
+  <div class="site-meta">
 
-{% block sidebar %}
-  {{ sidebar_template.render(true) }}
-{% endblock %}
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Who am I</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
 
-{% block script_extra %}
-  {% include '_scripts/pages/post-details.swig' %}
-{% endblock %}
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="user fa-fw"></i>About</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="th fa-fw"></i>Categories</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="archive fa-fw"></i>Archives</a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="sitemap fa-fw"></i>Sitemap</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Teyumn</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">categories</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/hontakyu" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;hontakyu" rel="noopener me" target="_blank"><i class="github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.facebook.com/hdyhandeyu" title="FB → https:&#x2F;&#x2F;www.facebook.com&#x2F;hdyhandeyu" rel="noopener me" target="_blank"><i class="facebook fa-fw"></i>FB</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.linkedin.com/in/handeyu" title="LinkedIn → https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;handeyu" rel="noopener me" target="_blank"><i class="linkedin fa-fw"></i>LinkedIn</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.zhihu.com/people/xiao-yu-44" title="知乎 → https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;xiao-yu-44" rel="noopener me" target="_blank"><i class="user-circle-o fa-fw"></i>知乎</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://hontakyu.github.io/2016/12/22/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Teyumn">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Who am I">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Hello World | Who am I">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Hello World
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2016-12-22 22:46:22" itemprop="dateCreated datePublished" datetime="2016-12-22T22:46:22-08:00">2016-12-22</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2017-12-24 22:52:26" itemprop="dateModified" datetime="2017-12-24T22:52:26-08:00">2017-12-24</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/dev/" itemprop="url" rel="index"><span itemprop="name">敲敲打打</span></a>
+        </span>
+    </span>
+
+  
+    <span id="/2016/12/22/hello-world/" class="post-meta-item leancloud_visitors" data-flag-title="Hello World" title="Views">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">Views: </span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>Welcome! This is my very first post. </p>
+<p>The website is not going to be publicly spread, at least for now. So if you visit here without notified by me, lucky for you! </p>
+<span id="more"></span>
+
+<p>This site is now kept as a place to record some piecemeal, messy thoughts and ideas about everything I want to write.</p>
+<p>I’m gonna use this post to record what I did on constructing this blog. It’s going to be updated every time when I implement something new on the site.</p>
+<p>12&#x2F;16&#x2F;2016<br>Today, I built this website successfully, with the help of <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a></p>
+<p>12&#x2F;21&#x2F;2016<br>目前啥都没有，今晚主要添加了评论功能，虽然连一篇文章都还没有…</p>
+<p>12&#x2F;23&#x2F;2016<br>Uploaded a new avatar, this is my favorite one, although it has no relationship with myself at all. I’ve been using this pic for many on line accounts and a lot of people said they love this one. However, the picture is not my creature, it is grabbed from a search engine called <a target="_blank" rel="noopener" href="https://baidu.com/">baidu</a> many years ago, I’d like to add a source here, if someone knows that, plz leave me a comment below, thanks!</p>
+<p>12&#x2F;24&#x2F;2016<br>Add “about me” page, but I think I still need time to figure out what to say on this page… So, leave it blank!</p>
+<p>1&#x2F;1&#x2F;2017<br>最近一直想写点什么，到笔下却写不出来，有些情绪可能只能留在心里吧～</p>
+<p>1&#x2F;2&#x2F;2017<br>补发新年快乐！今年的元旦是和朋友在纽约过的。大冷天的两个人在外面站了9个小时，嗯… “十分有意义”… 不过有朋友陪着其实也还好，只是没看到想看的东西，同时也加深了以后不过年去纽约了的想法…</p>
+<p>1&#x2F;3&#x2F;2017<br>看了Sherlock S401。</p>
+<p>You made me so happy.<br>You gave me everything I could ever, ever have wanted…<br>You were my whole world.<br>Being Mary Watson…<br>Was the only life worth living.<br>Thank you.</p>
+<p>对于这个结果我真的接受不能啊！！！</p>
+<p>1&#x2F;4&#x2F;2017<br>Add “Read More” functions.</p>
+<p>1&#x2F;6&#x2F;2017<br>发烧 + 上火 &#x3D; 各种难受…</p>
+<p>1&#x2F;10&#x2F;2017<br>最近很喜欢小提琴啊！音色甚是悠扬，本身是古典乐器，但配合上现代的流行音乐风，又多了一种时尚的感觉～</p>
+<p>6&#x2F;14&#x2F;2017<br>duoshuo前段时间倒闭了… 于是我的评论功能就没法再用了… 简直不敢相信国内最大的评论平台倒闭了， 原因据说很简单：工具是免费的，大家捐助也不够多，用的人越来越多自然入不敷出。目前其实还有很多评论工具可以用，但都有一个问题，就是必须登录第三方账号，除了多说剩下的还都必须是海外账号，这不是我想要的，我希望能每个人点进来想评论就可以评论。这样的话可能就要我自己建数据库了，但GitHub只能发布静态页面，所以现在有两个选择，一个是找其他平台发布我的blog，反正现在也没人看，换平台简直不要太容易，缺点是要每个月付费，对于现在的我来说不太现实。另一个是还放在GitHub，但需要我在别的地方开个服务器，可以24小时不断的那种，这个其实成本远超第一种，不过我正在考虑可不可以在学校服务器上偷偷跑，这样就完美了。总之这是现阶段的临时策略，而且这个评论系统也有安全隐患（也是为什么其他工具都要求登陆账号的原因），不过正如前面所讲，反正现在也没人看，出事故的可能性微乎其微，所以就先这样吧！至于什么时候有空搞这个，就要看我什么时候有空了，hiahiahiahia~ </p>
+<p>Plus: node.js 出了bug导致无法post到GitHub，等什么时候解决了什么时候再发吧…</p>
+<p>12&#x2F;22&#x2F;2017<br>为了恢复我的评论系统，找了一些奇奇怪怪的东西，最后想着还是用Facebook comments，最大的缺点就是国内的人没法评论了，因为必须要有Facebook账号… 不过这一年的统计看下来也几乎没有国内的人看，所以应该无所谓了，有得必有失吧！</p>
+<p>另外我发现个规律，我只有在寒暑假的时候有空更新，希望工作后能更频繁一点吧。我也准备填填新内容了，现在真的是百废待兴，就是没空…</p>
+<p>总结下这半年都干了啥吧！学了不少新东西，尤其是security的东西，很多都非常有意思。还学了点Android开发，虽然不多。AI和deep learning也学了一丢丢，感觉很有意思，也觉得真的很有用，至于以后是不是真的会做出来那种大而全的AI我觉得以后应该是能做出来，但可能还要再过个10年左右吧，或者更久。感觉大家现在还是在探索这技术究竟能干些什么，很多公司都还在起步阶段，虽然仅仅是起步就已经做出很多非常令人惊艳的产品和成果了。希望未来能有更大的发展，并且真是造福人类（而不是消灭人类:)）。Blockchain是我态度转变最大的一个点，之前没有太明白详细的技术原理，现在逐渐懂了一些发现有越来越多的startup在往这个方向转变是很有道理的，未来可能真的可以解决很多问题，甚至改变世界，但我冥冥之中总觉得这个东西还是有一些缺陷在制约它的发展，不是那种显而易见的缺陷，比如在金融领域无法监管之类的，但又说不出来。唉！不可说不可说，可能以后会想明白吧，这波浪潮我还是持非常谨慎的态度的，不打算下海，就算谁真的靠这个一夜暴富也不会羡慕，虽然我很缺钱…</p>
+<p>学业上我现在的状态是越来越好，虽然距离目标还是有很危险的差距。这里真的很虐人，即使因素很多都源于自身。希望下学期能更好一点，做好该做的事。</p>
+<p>最后突然发现今天是我这个小站的一周年，哈哈哈！ 祝你生日快乐</p>
+<p>12&#x2F;24&#x2F;2017<br>今天加了categories。哇，这么一个小东西搞了将近一天，到现在还没太搞懂，但好像能用了… 感觉真的是笨了，服了自己了。还加了404页面，不过不太好看，又给删了。最后加了两段JS动画，背景能用到。有点费电其实，不过暂时还可以接受。</p>
+<!-- ## Quick Start
+
+### Create a new post
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/deployment.html">Deployment</a><br> –&gt;</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+            </div>
+            <div class="post-nav-item">
+                <a href="/2017/01/04/Trip-to-New-York/" rel="next" title="Trip to New York">
+                  Trip to New York <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2016 – 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Teyumn</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+  
+
+
+  <script class="next-config" data-name="leancloud_visitors" type="application/json">{"enable":true,"app_id":"0dABUzsxBTAngWtuFRKsVCL8-gzGzoHsz","app_key":"dGafWGQE2tCXWKzJccdVePHV","server_url":null,"security":true}</script>
+  <script src="/js/third-party/statistics/lean-analytics.js"></script>
+
+
+
+</body>
+</html>

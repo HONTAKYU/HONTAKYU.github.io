@@ -1,37 +1,334 @@
-{% extends '_layout.swig' %}
-{% import '_macro/post.swig' as post_template %}
-{% import '_macro/sidebar.swig' as sidebar_template %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
 
 
-{% block title %}{{ page.title }} | {{ config.title }}{% endblock %}
 
-{% block page_class %}page-post-detail{% endblock %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha256-Z1K5uhUaJXA7Ll0XrZ/0JhX4lAtZFpT6jkKrEDT0drU=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"hontakyu.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.14.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="这两天和朋友们一起去了纽约，全程四天三夜。经历了不少有趣的人和事，看了许多景点和建筑，领略了美国第一大都市的魅力，找到了好多美国历史的影子。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Trip to New York">
+<meta property="og:url" content="https://hontakyu.github.io/2017/01/04/Trip-to-New-York/index.html">
+<meta property="og:site_name" content="Who am I">
+<meta property="og:description" content="这两天和朋友们一起去了纽约，全程四天三夜。经历了不少有趣的人和事，看了许多景点和建筑，领略了美国第一大都市的魅力，找到了好多美国历史的影子。">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2017-01-05T06:46:22.000Z">
+<meta property="article:modified_time" content="2023-01-31T07:07:41.730Z">
+<meta property="article:author" content="Teyumn">
+<meta name="twitter:card" content="summary">
+<meta property="fb:admins" content="hdyhandeyu">
+<meta property="fb:app_id" content="1496669363762864">
 
 
-{% block content %}
+<link rel="canonical" href="https://hontakyu.github.io/2017/01/04/Trip-to-New-York/">
 
-  <div id="posts" class="posts-expand">
-    {{ post_template.render(page) }}
 
-    <div class="post-spread">
-      {% if theme.jiathis %}
-        {% include '_partials/share/jiathis.swig' %}
-      {% elseif theme.baidushare %}
-        {% include '_partials/share/baidushare.swig' %}
-      {% elseif theme.add_this_id %}
-        {% include '_partials/share/add-this.swig' %}
-      {% elseif theme.duoshuo_shortname and theme.duoshuo_share %}
-        {% include '_partials/share/duoshuo_share.swig' %}
-      {% endif %}
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://hontakyu.github.io/2017/01/04/Trip-to-New-York/","path":"2017/01/04/Trip-to-New-York/","title":"Trip to New York"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Trip to New York | Who am I</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-89396944-1"></script>
+  <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"UA-89396944-1","only_pageview":false}</script>
+  <script src="/js/third-party/analytics/google-analytics.js"></script>
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
     </div>
   </div>
 
-{% endblock %}
+  <div class="site-meta">
 
-{% block sidebar %}
-  {{ sidebar_template.render(true) }}
-{% endblock %}
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Who am I</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
 
-{% block script_extra %}
-  {% include '_scripts/pages/post-details.swig' %}
-{% endblock %}
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="user fa-fw"></i>About</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="th fa-fw"></i>Categories</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="archive fa-fw"></i>Archives</a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="sitemap fa-fw"></i>Sitemap</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Teyumn</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">categories</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/hontakyu" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;hontakyu" rel="noopener me" target="_blank"><i class="github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.facebook.com/hdyhandeyu" title="FB → https:&#x2F;&#x2F;www.facebook.com&#x2F;hdyhandeyu" rel="noopener me" target="_blank"><i class="facebook fa-fw"></i>FB</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.linkedin.com/in/handeyu" title="LinkedIn → https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;handeyu" rel="noopener me" target="_blank"><i class="linkedin fa-fw"></i>LinkedIn</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.zhihu.com/people/xiao-yu-44" title="知乎 → https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;xiao-yu-44" rel="noopener me" target="_blank"><i class="user-circle-o fa-fw"></i>知乎</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://hontakyu.github.io/2017/01/04/Trip-to-New-York/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Teyumn">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Who am I">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Trip to New York | Who am I">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Trip to New York
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2017-01-04 22:46:22" itemprop="dateCreated datePublished" datetime="2017-01-04T22:46:22-08:00">2017-01-04</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2023-01-30 23:07:41" itemprop="dateModified" datetime="2023-01-30T23:07:41-08:00">2023-01-30</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/balderdash/" itemprop="url" rel="index"><span itemprop="name">胡言乱语</span></a>
+        </span>
+    </span>
+
+  
+    <span id="/2017/01/04/Trip-to-New-York/" class="post-meta-item leancloud_visitors" data-flag-title="Trip to New York" title="Views">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">Views: </span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>这两天和朋友们一起去了纽约，全程四天三夜。经历了不少有趣的人和事，看了许多景点和建筑，领略了美国第一大都市的魅力，找到了好多美国历史的影子。<span id="more"></span> 不过感觉大都会博物馆没有芝加哥艺术馆好玩，好多藏品中要么能找到中国的影子，要么是宗教和神话的象征。而我恰好并不是很期待这两者。此外人实在是太多了，因为过节的原因，几乎所有的地方都需要排队，超长的队伍让我们一看到就几乎放弃了参观的念头…感觉以后可能赶人少的时候去会好一点，不过貌似纽约也没有什么特别值得专门一去的地方，所以以后可能也不会再去了，哈哈哈～</p>
+<p>如果说纽约有什么给我留下了深刻的印象，我觉得那一定是百老汇了。和朋友们去看了Cats，因为先前曾经在网上看过，其实没什么感觉，因为并不是叙事的剧，我对童话又没有太多的感觉。不过到了现场发现完全被震撼到了，气氛和坐在家里看视频完全不可同日而语，特别是演员们的嗓音，是那种专门训练过的美声唱法，配合立体声音响，和绚丽的舞台灯光效果，瞬间让我感觉哪怕就为了这个纽约也没有白来。一个童话剧居然能让我感动，好希望以后能有机会看Chicago和悲惨世界。</p>
+<p>在纽约也见到了形形色色的人，我们住在Marathon的upper town，那里黑人相对较多，不过并没有我想象的那么危险，只是晚上略萧条。房东也是个黑人阿姨，而且和我妈妈年龄相仿，不过已经拿到了theatre的本科和Master，现在是一个作家。我心底里还是对她十分敬佩的。有色人种的努力在这个国家一直都不怎么受待见，更何况是当初那个年代。只是有点可惜没有和她多聊聊。最令我感叹的还是这几天来和朋友们的聊天，了解了很多曾经同学老师的“近况”。发现大家终究都是要变的，很多人和事已经早已不再是小时候想象的样子。不禁想到了长者，“一个人啊！就是没有办法预料自己的命运”，无论变好变坏，总算是一种成长。其实说这么多，潜意识里我还是希望自己把当初的时光留在回忆当中，算是给自己单纯的童年找个落脚的地方不想被人打扰。但人怎么可能不向前看呢！如果有人告诉我当初的一切都没变，我可能反而更惊讶吧！唉，我怎么这么纠结…</p>
+<p>好多年没正经写过东西了，现在试着写一下感觉好不习惯… 算是个开始吧！之后的日子还长着呢～</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2016/12/22/hello-world/" rel="prev" title="Hello World">
+                  <i class="fa fa-chevron-left"></i> Hello World
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2017/06/13/middle-point-of-2017/" rel="next" title="middle point of 2017">
+                  middle point of 2017 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2016 – 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Teyumn</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+  
+
+
+  <script class="next-config" data-name="leancloud_visitors" type="application/json">{"enable":true,"app_id":"0dABUzsxBTAngWtuFRKsVCL8-gzGzoHsz","app_key":"dGafWGQE2tCXWKzJccdVePHV","server_url":null,"security":true}</script>
+  <script src="/js/third-party/statistics/lean-analytics.js"></script>
+
+
+
+</body>
+</html>
